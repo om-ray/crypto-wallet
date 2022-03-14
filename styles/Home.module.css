@@ -48,6 +48,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-family: "Playfair display";
 }
 
 .title,
@@ -65,8 +66,8 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+    Courier New, monospace;
 }
 
 .grid {
@@ -87,7 +88,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: fit-content;
 }
 
 .card:hover,
@@ -100,12 +101,99 @@
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Playfair display";
+}
+
+.card > h2 > i {
+  margin: 0 0 1rem 2px;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "Playfair display";
+  font-style: normal;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
+  font-weight: 300;
+  font-family: "roboto slab";
+}
+
+.card button {
+  font-family: "Playfair Display";
+  border: none;
+  background-color: transparent;
+}
+
+.accountContainer {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  min-width: fit-content;
+  overflow-y: auto;
+  height: 60vh;
+}
+
+.smallHorizontalFlexContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.smallHorizontalFlexContainer input {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  width: 100%;
+  max-height: 0%;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: flex;
+  max-height: fit-content;
+  border: 1px solid #eaeaea;
+}
+
+.dropdownContent button {
+  display: block;
+  font-family: "roboto slab";
+  color: #000000;
+  margin: 5px 0px;
+  border-radius: 5px;
+  padding: 10px 0px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  text-decoration: none;
+  width: 100%;
+}
+
+.dropdownContent button:hover {
+  border-color: #0077ff;
 }
 
 .logo {
