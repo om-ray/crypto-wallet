@@ -49,6 +49,7 @@
   line-height: 1.15;
   font-size: 4rem;
   font-family: "Playfair display";
+  font-weight: 900;
 }
 
 .title,
@@ -122,6 +123,42 @@
 }
 
 .card button {
+  font-family: "Playfair Display";
+  border: none;
+  background-color: transparent;
+}
+
+.accountContainer h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Playfair display";
+}
+
+.accountContainer h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Playfair display";
+}
+
+.accountContainer > h2 > i {
+  margin: 0 0 1rem 2px;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "Playfair display";
+  font-style: normal;
+}
+
+.accountContainer p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: "roboto slab";
+}
+
+.accountContainer button {
   font-family: "Playfair Display";
   border: none;
   background-color: transparent;
